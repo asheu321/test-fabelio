@@ -1,0 +1,48 @@
+/**
+ * MAIN STYLE
+ *
+ * -----------------
+ * Table of Content
+ * -----------------
+ * - Global Style
+ *
+ * - Header
+ *  . Top Menu
+ *  . Main Menu
+ *  . Footer Menu
+ *
+ * - Hero / Home Slider
+ */
+
+/** ============================
+ * Global Style
+ ** ===========================*/
+ @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+ body {
+    background-color: #fff;
+    color: #73879c;
+    font-family: "Source Sans Pro",sans-serif;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+/** ============================
+ * Header
+ ** ===========================*/
+
+ /* Top Menu */
+ .top-menu {
+    background-color: #f5f7fa;
+    border-bottom: 1px solid #e6e9ed;
+    padding: 10px 0;
+}
+
+/** ============================
+ * Hero / Home Slider
+ ** ===========================*/
+ #hero {
+     min-height: 300px;
+     border-top: 1px solid #eee;
+     border-bottom: 1px solid #eee;
+ }
