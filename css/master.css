@@ -127,8 +127,17 @@
 /** ============================
  * Hero / Home Slider
  ** ===========================*/
- #hero {
-     min-height: 300px;
-     border-top: 1px solid #eee;
-     border-bottom: 1px solid #eee;
+ .intro-text {
+     text-align: center !important;
  }
+
+ .home-slider .btn {
+    margin-top: 35px;
+    background-color: #17a78b;
+    color: #fff;
+}
+
+ .home-slider .btn-large {
+    font-size: 16px;
+    padding: 15px 35px 17px;
+}
