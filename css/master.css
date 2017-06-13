@@ -11,13 +11,15 @@
  *  . Main Menu
  *  . Footer Menu
  *
- * - Hero / Home Slider
+ * - Content
+ *  . Hero / Home Slider
+ *  . Main Content
  */
 
 /** ============================
  * Global Style
  ** ===========================*/
- @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700');
+ @import url('https://fonts.googleapis.com/css?family=Lato:400,700,900|Source+Sans+Pro:400,600,700');
 
  body {
     background-color: #fff;
@@ -30,6 +32,25 @@
 .container {
     padding-left: 0;
     padding-right: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #73879c;
+}
+
+h2 {
+    font-size: 44px;
+}
+
+h3 {
+    font-size: 26px;
 }
 
 /** ============================
@@ -125,8 +146,10 @@
 }
 
 /** ============================
- * Hero / Home Slider
+ * Content
  ** ===========================*/
+
+ /* Hero / Home Slider */
  .intro-text {
      text-align: center !important;
  }
@@ -140,4 +163,44 @@
  .home-slider .btn-large {
     font-size: 16px;
     padding: 15px 35px 17px;
+}
+
+/* Main Content */
+.main-content {
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
+
+.desc {
+    font-size: 22px;
+    text-align: center;
+    color: #73879c;
+    max-width: 780px;
+    margin: 0 auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.feature-list {
+    padding: 0;
+    margin: 0;
+}
+
+.feature-list li {
+    list-style: none;
+    display: table-cell;
+    max-width: 30%;
+    padding: 15px 25px;
+}
+
+.feature-list .licon,
+.feature-list .lcontent {
+    display: table-cell;
+}
+
+.licon {
+    font-size: 70px;
+    vertical-align: top;
+    padding-right: 20px;
+    color: #17a78b;
 }
