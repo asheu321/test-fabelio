@@ -21,10 +21,15 @@
 
  body {
     background-color: #fff;
-    color: #73879c;
+    color: #506a85;
     font-family: "Source Sans Pro",sans-serif;
     font-size: 18px;
     line-height: 1.4;
+}
+
+.container {
+    padding-left: 0;
+    padding-right: 0;
 }
 
 /** ============================
@@ -36,6 +41,52 @@
     background-color: #f5f7fa;
     border-bottom: 1px solid #e6e9ed;
     padding: 10px 0;
+    font-size: 12px;
+}
+
+.top-menu a {
+    color: #506a85;
+    text-decoration: none;
+}
+
+.top-menu ul {
+    padding: 0;
+    margin: 0;
+}
+
+.top-menu li {
+    text-decoration: none;
+    list-style: none;
+    float: left;
+}
+
+.top-menu .info > li {
+    margin-right: 25px;
+}
+
+.top-menu .social > li {
+    margin-left: 20px;
+}
+
+.top-menu .fa.fa-mobile-phone {
+    font-size: 18px;
+    vertical-align: middle;
+    position: relative;
+    top: -2px;
+}
+
+.top-menu .info .fa {
+    margin-right: 5px;
+}
+
+/* Main Menu */
+.main-menu {
+    padding: 35px 0;
+}
+
+.main-menu .branding a:hover {
+    opacity: 0.7;
+    transition: linear ease-in 0.25s;
 }
 
 /** ============================
