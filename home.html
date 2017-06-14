@@ -52,7 +52,12 @@
                     <div class="branding navbar-brand">
                         <a href="#"><img src="img/logo.png" alt="Fabelio Test"></a>
                     </div>
-                    <ul class="nav navbar-nav">
+                    <button class="mobile-nav hidden-md hidden-lg" type="button">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul id="main-menu" class="nav navbar-nav">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">Portfolio</a></li>
                         <li><a href="#">Blog</a></li>
@@ -62,11 +67,12 @@
                         <li><a href="#">Contact</a></li>
                         <li class="search pull-right"><a href="#"><i class="fa fa-search"></i></a></li>
                     </ul>
+                    <div class="clearfix"></div>
                 </div>
             </div>
         </header>
 
-        <div class="content">
+        <main class="content">
             <div class="home-slider rev_slider_wrapper">
                 <!-- the ID here will be used in the inline JavaScript below to initialize the slider -->
                 <div id="rev_slider_1" class="rev_slider" style="display:none" data-version="5.4.1">
@@ -80,7 +86,7 @@
 
                             data-frames='[{"delay":0,"speed":1000,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
 
-                            data-x="center" data-y="130" data-width="['auto']" data-height="['auto']" style="font-size: 60px;letter-spacing: 5px;">MADE FOR DESIGNERS</div>
+                            data-x="center" data-y="130" data-width="['auto']" data-height="['auto']" style="font-size: 78px;letter-spacing: 5px;">MADE FOR DESIGNERS</div>
                             <!-- TEXT LAYER 1 -->
 
                             <!-- TEXT LAYER 2 -->
@@ -88,7 +94,7 @@
 
                             data-frames='[{"delay":800,"speed":1000,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
 
-                            data-x="center" data-y="200" data-width="['900']" data-height="['auto']" data-hoffset="0" data-voffset="0" data-transform_idle="o:1;"
+                            data-x="center" data-y="210" data-width="['900']" data-height="['auto']" data-hoffset="0" data-voffset="0" data-transform_idle="o:1;"
                             data-transform_in="opacity:0;s:300;e:Power2.easeInOut;"
                             data-transform_out="opacity:0;s:300;s:300;"
                             data-start="800"
@@ -99,8 +105,8 @@
                                min-width: 200px;
                                max-width: 200px;
                                white-space: normal;
-                               font-size: 20px;
-                               line-height: 26px;
+                               font-size: 24px;
+                               line-height: 32px;
                                font-weight: 400;
                                color: #a3b1bf;
                                text-align: center;">Create your online portfolio in minutes with the professionally and lovingly designed REEN website template. Customize your site with versatile and easy to use features<br/><a href="#" class="btn btn-large">Get started now</a></div>
@@ -119,61 +125,64 @@
                             REEN is a high-quality solution for those who want a beautiful website in no time.<br/> It's fully responsive and will adapt itself to any mobile device. iPad, iPhone, Android, it doesn't matter. Your content will always looks its absolute best.
                         </div>
 
-                        <ul class="feature-list">
-                            <li class="col-lg-4">
-                                <div class="licon">
-                                    <i class="fa fa-heart-o"></i>
-                                </div>
-                                <div class="lcontent">
-                                    <h3>Passion</h3>
-                                    <p>Magnis modipsae que lib voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam core posae volor remped modis volor.</p>
-                                </div>
-                            </li>
-                            <li class="col-lg-4">
-                                <div class="licon">
-                                    <i class="fa fa-lightbulb-o"></i>
-                                </div>
-                                <div class="lcontent">
-                                    <h3>Creativity</h3>
-                                    <p>Magnis modipsae que lib voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam core posae volor remped modis volor.</p>
-                                </div>
-                            </li>
-                            <li class="col-lg-4">
-                                <div class="licon">
-                                    <i class="fa fa-star-o"></i>
-                                </div>
-                                <div class="lcontent">
-                                    <h3>Quality</h3>
-                                    <p>Magnis modipsae que lib voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam core posae volor remped modis volor.</p>
-                                </div>
-                            </li>
-                        </ul>
+                        <div class="row">
+                            <ul class="feature-list">
+                                <li class="col-lg-4 col-md-4">
+                                    <div class="licon">
+                                        <i class="fa fa-heart-o"></i>
+                                    </div>
+                                    <div class="lcontent">
+                                        <h3>Passion</h3>
+                                        <p>Magnis modipsae que lib voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam core posae volor remped modis volor.</p>
+                                    </div>
+                                </li>
+                                <li class="col-lg-4 col-md-4">
+                                    <div class="licon">
+                                        <i class="fa fa-lightbulb-o"></i>
+                                    </div>
+                                    <div class="lcontent">
+                                        <h3>Creativity</h3>
+                                        <p>Magnis modipsae que lib voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam core posae volor remped modis volor.</p>
+                                    </div>
+                                </li>
+                                <li class="col-lg-4 col-md-4">
+                                    <div class="licon">
+                                        <i class="fa fa-star-o"></i>
+                                    </div>
+                                    <div class="lcontent">
+                                        <h3>Quality</h3>
+                                        <p>Magnis modipsae que lib voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam core posae volor remped modis volor.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </section>
 
-                <section class="bg-grey">
+                <section class="portfolio bg-grey">
                     <div class="container">
                         <h2 class="text-center">Check out our latest works</h2>
                         <div class="desc">
                             Magnis modipsae que voloratati andigen daepeditem quiate re porem aut labor.
                         </div>
-
-                        <ul class="portfolio-grid clearfix">
-                            <li class="col-lg-6">
-                                <figure>
-                                    <img src="img/portfolio-1.jpg" alt="Portfolio Sample 1">
-                                    <figcaption class="text-center">Grand Motel gets an identity brushup</figcaption>
-                                    <span class="category text-center show">Identity</span>
-                                </figure>
-                            </li>
-                            <li class="col-lg-6">
-                                <figure>
-                                    <img src="img/portfolio-2.jpg" alt="Portfolio Sample 2">
-                                    <figcaption class="text-center">Fresh branding for a creative startup</figcaption>
-                                    <span class="category text-center show">Identity</span>
-                                </figure>
-                            </li>
-                        </ul>
+                        <div class="row">
+                            <ul class="portfolio-grid clearfix">
+                                <li class="col-lg-6 col-md-6 col-sm-6">
+                                    <figure>
+                                        <img src="img/portfolio-1.jpg" alt="Portfolio Sample 1">
+                                        <figcaption class="text-center">Grand Motel gets an identity brushup</figcaption>
+                                        <span class="category text-center show">Identity</span>
+                                    </figure>
+                                </li>
+                                <li class="col-lg-6 col-md-6 col-sm-6">
+                                    <figure>
+                                        <img src="img/portfolio-2.jpg" alt="Portfolio Sample 2">
+                                        <figcaption class="text-center">Fresh branding for a creative startup</figcaption>
+                                        <span class="category text-center show">Identity</span>
+                                    </figure>
+                                </li>
+                            </ul>
+                        </div>
 
                         <div id="portfolio-carousel" class="carousel slide" data-ride="carousel">
                             <!-- Indicators -->
@@ -186,45 +195,51 @@
                             <!-- Wrapper for slides -->
                             <div class="carousel-inner">
                                 <div class="item active">
-                                    <div class="col-lg-3">
-                                        <img src="img/carousel-1.jpg" alt="Sample Carousel 1">
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <img src="img/carousel-2.jpg" alt="Sample Carousel 2">
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <img src="img/carousel-3.jpg" alt="Sample Carousel 3">
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <img src="img/carousel-4.jpg" alt="Sample Carousel 4">
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="col-lg-3">
-                                        <img src="img/carousel-1.jpg" alt="Sample Carousel 1">
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <img src="img/carousel-2.jpg" alt="Sample Carousel 2">
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <img src="img/carousel-3.jpg" alt="Sample Carousel 3">
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <img src="img/carousel-4.jpg" alt="Sample Carousel 4">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-md-3 col-sm-6">
+                                            <img src="img/carousel-1.jpg" alt="Sample Carousel 1">
+                                        </div>
+                                        <div class="col-lg-3 col-md-3 col-sm-6">
+                                            <img src="img/carousel-2.jpg" alt="Sample Carousel 2">
+                                        </div>
+                                        <div class="col-lg-3 col-md-3 col-sm-6">
+                                            <img src="img/carousel-3.jpg" alt="Sample Carousel 3">
+                                        </div>
+                                        <div class="col-lg-3 col-md-3 col-sm-6">
+                                            <img src="img/carousel-4.jpg" alt="Sample Carousel 4">
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="item">
-                                    <div class="col-lg-3">
-                                        <img src="img/carousel-1.jpg" alt="Sample Carousel 1">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-md-3 col-sm-6">
+                                            <img src="img/carousel-1.jpg" alt="Sample Carousel 1">
+                                        </div>
+                                        <div class="col-lg-3 col-md-3 col-sm-6">
+                                            <img src="img/carousel-2.jpg" alt="Sample Carousel 2">
+                                        </div>
+                                        <div class="col-lg-3 col-md-3 col-sm-6">
+                                            <img src="img/carousel-3.jpg" alt="Sample Carousel 3">
+                                        </div>
+                                        <div class="col-lg-3 col-md-3 col-sm-6">
+                                            <img src="img/carousel-4.jpg" alt="Sample Carousel 4">
+                                        </div>
                                     </div>
-                                    <div class="col-lg-3">
-                                        <img src="img/carousel-2.jpg" alt="Sample Carousel 2">
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <img src="img/carousel-3.jpg" alt="Sample Carousel 3">
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <img src="img/carousel-4.jpg" alt="Sample Carousel 4">
+                                </div>
+                                <div class="item">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-md-3 col-sm-6">
+                                            <img src="img/carousel-1.jpg" alt="Sample Carousel 1">
+                                        </div>
+                                        <div class="col-lg-3 col-md-3 col-sm-6">
+                                            <img src="img/carousel-2.jpg" alt="Sample Carousel 2">
+                                        </div>
+                                        <div class="col-lg-3 col-md-3 col-sm-6">
+                                            <img src="img/carousel-3.jpg" alt="Sample Carousel 3">
+                                        </div>
+                                        <div class="col-lg-3 col-md-3 col-sm-6">
+                                            <img src="img/carousel-4.jpg" alt="Sample Carousel 4">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -232,14 +247,98 @@
                         </div>
                     </div>
                 </section>
-            </div>
-        </div>
 
-        <div class="footer">
-            <div class="container">
-                Footer Here
+                <section class="contact">
+                    <div class="container">
+                        <h2 class="text-center">Want to work with us?</h2>
+                        <div class="desc">
+                            Magnis modipsae que voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam.
+                        </div>
+
+                        <a href="#" class="btn btn-large center">GET IN TOUCH</a>
+                    </div>
+                </section>
             </div>
-        </div>
+        </main>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-6">
+                        <h3>Who We Are</h3>
+                        <figure>
+                            <img src="img/logo-white.jpg" alt="Fabelio Test">
+                        </figure>
+
+                        <p>Magnis modipsae voloratati andigen daepeditem quiate re porem que aut labor. Laceaque eictemperum quiae sitiorem rest non restibusaes maio es dem tumquam.</p>
+
+                        <a href="#" class="more">More about us <i class="fa fa-long-arrow-right"></i></a>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6">
+                        <h3>Latest Works</h3>
+                        <ul class="latest-work-grid">
+                            <li class="col-lg-6 col-md-6  col-sm-6">
+                                <figure>
+                                    <img src="img/workthumb-1.jpg" alt="portfolio1">
+                                </figure>
+                            </li>
+                            <li class="col-lg-6 col-md-6 col-sm-6">
+                                <figure>
+                                    <img src="img/workthumb-2.jpg" alt="portfolio1">
+                                </figure>
+                            </li>
+                            <li class="col-lg-6 col-md-6 col-sm-6">
+                                <figure>
+                                    <img src="img/workthumb-3.jpg" alt="portfolio1">
+                                </figure>
+                            </li>
+                            <li class="col-lg-6 col-md-6 col-sm-6">
+                                <figure>
+                                    <img src="img/workthumb-4.jpg" alt="portfolio1">
+                                </figure>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6">
+                        <h3>Get in Touch</h3>
+                        <p class="first">Doloreiur quia commolu ptatemp dolupta oreprerum tibusam eumenis et consent accullignis dentibea autem inisita.</p>
+                        <ul class="info">
+                            <li><i class="fa fa-map-marker"></i> 84 Street, City, State 24813</li>
+                            <li><i class="fa fa-mobile"></i> +00 (123) 456 78 90</li>
+                            <li><i class="fa fa-envelope-o"></i> info@reen.com</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6">
+                        <h3>Free Updates</h3>
+                        <p class="first">Conecus iure posae volor remped modis aut lor volor accabora incim resto explabo.</p>
+                        <form class="footer-widget" action="#" method="post">
+                            <input type="text" class="form-control" id="" placeholder="Enter your email address">
+                            <button type="submit" name="button" class="btn btn-large">SUBSCRIBE</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="claim">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 copyright text-left">
+                            <p>&copy; 2014 REEN. All rights reserved.</p>
+                        </div>
+                        <div class="col-lg-6 col-md-6 footer-menu text-right">
+                            <ul class="footer-nav">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Portfolio</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Service</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="js/jquery.min.js"></script>

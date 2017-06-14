@@ -45,12 +45,21 @@ p {
     color: #73879c;
 }
 
+p.first {
+    padding-top: 0;
+    margin-top: 0;
+}
+
 h2 {
     font-size: 44px;
 }
 
 h3 {
     font-size: 26px;
+}
+
+h4 {
+    font-size: 16px;
 }
 
 section {
@@ -96,6 +105,25 @@ figcaption {
 
 .bg-grey {
     background-color: #f2f5f7;
+}
+
+.btn {
+    background-color: #17a78b;
+    color: #fff;
+}
+
+.btn:hover {
+    color: #fff;
+}
+
+.btn-large {
+   font-size: 16px;
+   padding: 15px 35px 17px;
+}
+
+.center {
+    display: table;
+    margin: 0 auto;
 }
 
 /** ============================
@@ -186,9 +214,35 @@ figcaption {
     border: 1px solid #e6e9ed;
 }
 
+.mobile-nav {
+    background: #17a78b;
+    border: none;
+    box-shadow: none;
+    padding: 5px 8px;
+    width: 42px;
+    border-radius: 3px;
+    float: right;
+    margin: 17px 0;
+}
+
+.mobile-nav > span {
+    display: block;
+    height: 4px;
+    background: #fff;
+    margin: 5px 0;
+    border-radius: 3px;
+}
+
 @media all and (max-width: 1024px) {
     .main-menu .navbar-nav {
         display: none;
+    }
+
+    .main-menu .branding {
+        float: left;
+        max-width: 300px;
+        padding-left: 0;
+        display: table;
     }
 }
 
@@ -203,13 +257,6 @@ figcaption {
 
  .home-slider .btn {
     margin-top: 35px;
-    background-color: #17a78b;
-    color: #fff;
-}
-
- .home-slider .btn-large {
-    font-size: 16px;
-    padding: 15px 35px 17px;
 }
 
 /* Main Content */
@@ -236,6 +283,12 @@ figcaption {
     vertical-align: top;
     padding-right: 20px;
     color: #17a78b;
+}
+
+@media all and (max-width: 1010px) {
+    .licon {
+        width: 120px;
+    }
 }
 
 /* Portfolio Section */
@@ -266,4 +319,146 @@ figcaption {
 
 #portfolio-carousel .carousel-indicators .active {
     background-color: #17a78b;
+}
+
+/** =========================
+ * Footer
+ ** ========================*/
+ footer {
+    background-color: #2f4052;
+    padding-top: 30px;
+}
+
+footer h3 {
+   font-size: 16px;
+   color: #fff;
+   font-weight: 600;
+   text-transform: uppercase;
+   margin-bottom: 20px;
+   letter-spacing: 2px;
+}
+
+ footer figure {
+     background: none;
+     box-shadow: none;
+ }
+
+ footer p {
+    font-size: 14px;
+    padding: 15px 0 8px 0;
+}
+
+footer .more {
+    color: #a3b1bf;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+footer .claim {
+    background-color: #283645;
+    margin-top: 40px;
+}
+
+footer .latest-work-grid {
+    padding: 0;
+    margin: 0;
+}
+
+.latest-work-grid li {
+    list-style: none;
+    padding: 0px 0px 8px 0;
+}
+
+footer .info {
+    color: #73879c;
+    font-size: 14px;
+    list-style: none;
+    padding: 0;
+    font-weight: 600;
+}
+
+footer .info li > i {
+    width: 10px;
+    text-align: center;
+    margin-right: 7px;
+}
+
+footer form {
+    background-color: #4e5c6c;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+@media all and (min-width: 1200px) {
+    footer .form-control {
+        color: #fff;
+        display: table-cell;
+        max-width: 60%;
+        background: none;
+        border: none;
+        box-shadow: none;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media all and (max-width: 1200px) {
+    footer .form-control {
+        margin-bottom: 5px;
+    }
+}
+
+footer .btn {
+    display: table-cell;
+    padding: 4px 8px;
+}
+
+.footer-nav {
+    padding-top: 4px;
+    margin: 0;
+    line-height: 1;
+    vertical-align: top;
+    float: right;
+}
+
+.footer-nav li {
+    float: left;
+    padding-left: 15px;
+    list-style: none;
+}
+
+.footer-nav li::before {
+    content: '.';
+    position: relative;
+    font-size: 30px;
+    top: -3px;
+    left: -6px;
+}
+
+.footer-nav li:first-child::before {
+    content: '';
+}
+
+.footer-nav a {
+    font-size: 14px;
+    color: #707e8c;
+}
+
+@media all and (max-width: 1010px) {
+    .copyright {
+        text-align: center !important;
+    }
+
+    .footer-nav {
+        float: none !important;
+        padding: 0 0 25px 0 !important;
+        margin: 0 auto !important;
+        text-align: center !important;
+    }
+
+    .footer-nav li {
+        float: none !important;
+        text-align: center;
+        display: inline-block;
+    }
 }
