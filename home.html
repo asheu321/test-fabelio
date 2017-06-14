@@ -120,7 +120,7 @@
                         </div>
 
                         <ul class="feature-list">
-                            <li>
+                            <li class="col-lg-4">
                                 <div class="licon">
                                     <i class="fa fa-heart-o"></i>
                                 </div>
@@ -129,7 +129,7 @@
                                     <p>Magnis modipsae que lib voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam core posae volor remped modis volor.</p>
                                 </div>
                             </li>
-                            <li>
+                            <li class="col-lg-4">
                                 <div class="licon">
                                     <i class="fa fa-lightbulb-o"></i>
                                 </div>
@@ -138,7 +138,7 @@
                                     <p>Magnis modipsae que lib voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam core posae volor remped modis volor.</p>
                                 </div>
                             </li>
-                            <li>
+                            <li class="col-lg-4">
                                 <div class="licon">
                                     <i class="fa fa-star-o"></i>
                                 </div>
@@ -148,6 +148,88 @@
                                 </div>
                             </li>
                         </ul>
+                    </div>
+                </section>
+
+                <section class="bg-grey">
+                    <div class="container">
+                        <h2 class="text-center">Check out our latest works</h2>
+                        <div class="desc">
+                            Magnis modipsae que voloratati andigen daepeditem quiate re porem aut labor.
+                        </div>
+
+                        <ul class="portfolio-grid clearfix">
+                            <li class="col-lg-6">
+                                <figure>
+                                    <img src="img/portfolio-1.jpg" alt="Portfolio Sample 1">
+                                    <figcaption class="text-center">Grand Motel gets an identity brushup</figcaption>
+                                    <span class="category text-center show">Identity</span>
+                                </figure>
+                            </li>
+                            <li class="col-lg-6">
+                                <figure>
+                                    <img src="img/portfolio-2.jpg" alt="Portfolio Sample 2">
+                                    <figcaption class="text-center">Fresh branding for a creative startup</figcaption>
+                                    <span class="category text-center show">Identity</span>
+                                </figure>
+                            </li>
+                        </ul>
+
+                        <div id="portfolio-carousel" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#portfolio-carousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#portfolio-carousel" data-slide-to="1"></li>
+                                <li data-target="#portfolio-carousel" data-slide-to="2"></li>
+                            </ol>
+
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <div class="col-lg-3">
+                                        <img src="img/carousel-1.jpg" alt="Sample Carousel 1">
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <img src="img/carousel-2.jpg" alt="Sample Carousel 2">
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <img src="img/carousel-3.jpg" alt="Sample Carousel 3">
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <img src="img/carousel-4.jpg" alt="Sample Carousel 4">
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="col-lg-3">
+                                        <img src="img/carousel-1.jpg" alt="Sample Carousel 1">
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <img src="img/carousel-2.jpg" alt="Sample Carousel 2">
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <img src="img/carousel-3.jpg" alt="Sample Carousel 3">
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <img src="img/carousel-4.jpg" alt="Sample Carousel 4">
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="col-lg-3">
+                                        <img src="img/carousel-1.jpg" alt="Sample Carousel 1">
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <img src="img/carousel-2.jpg" alt="Sample Carousel 2">
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <img src="img/carousel-3.jpg" alt="Sample Carousel 3">
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <img src="img/carousel-4.jpg" alt="Sample Carousel 4">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                 </section>
             </div>
@@ -181,39 +263,13 @@
         <script src="js/bootstrap.min.js"></script>
 
         <script type="text/javascript">
-
-            /* https://learn.jquery.com/using-jquery-core/document-ready/ */
             jQuery(document).ready(function($) {
 
-                //alert('test');
-
-                /* initialize the slider based on the Slider's ID attribute */
+                /* Rev Slider */
                 jQuery('#rev_slider_1').show().revolution({
-
-                    /* options are 'auto', 'fullwidth' or 'fullscreen' */
                     sliderLayout: 'fullwidth',
-
-                    /* basic navigation arrows and bullets */
-                    /*navigation: {
-
-                        arrows: {
-                            enable: true,
-                            style: 'hesperiden',
-                            hide_onleave: false
-                        },
-
-                        bullets: {
-                            enable: true,
-                            style: 'hesperiden',
-                            hide_onleave: false,
-                            h_align: 'center',
-                            v_align: 'bottom',
-                            h_offset: 0,
-                            v_offset: 20,
-                            space: 5
-                        }
-                    }*/
                 });
+
             });
 
         </script>
